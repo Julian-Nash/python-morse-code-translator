@@ -1,6 +1,6 @@
 ## Simple Python Morse Code translator
 
-Translates text to more code and morse code to text using a small set of International morse code. Includes a small suite of basic tests.
+Translates text to morse code and morse code to text using a small set of International morse code. Includes a small suite of basic tests.
 
 ### Usage
 
