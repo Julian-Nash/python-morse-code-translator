@@ -1,8 +1,8 @@
-### Basic Python Morse Code translator
+## Simple Python Morse Code translator
 
 Translates text to more code and morse code to text using a small set of International morse code. Includes a small suite of basic tests.
 
-##### Usage
+### Usage
 
 After cloning the repo, run:
 
@@ -20,7 +20,7 @@ hello world! translating text to morse code.
 
 Feel free to change the text in the example. The example call `translate_morse` using the output of `translate_text`.
 
-##### Tests
+### Tests
 
 To run the tests:
 
