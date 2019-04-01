@@ -4,7 +4,7 @@ Translates text to more code and morse code to text using a small set of Interna
 
 ### Usage
 
-After cloning the repo, run:
+After cloning this repo, run:
 
 ```sh
 python example.py
@@ -13,12 +13,11 @@ python example.py
 Output:
 
 ```sh
-.... . .-.. .-.. ---   .-- --- .-. .-.. -.. -.-.--   - .-. .- -. ...
-.-.. .- - .. -. --.   - . -..- -   - ---   -- --- .-. ... .   -.-. --- -.. . .-.-.-
-hello world! translating text to morse code.
+- .... .. ...   ... - .-. .. -. --.   .... .- ...   -... . . -.   - .-. .- -. ... .-.. .- - . -..   - ---   -- --- .-. ... .   -.-. --- -.. .   .- -. -..   -... .- -.-. -.-   .- --. .- .. -.
+this string has been translated to morse code and back again
 ```
 
-Feel free to change the text in the example. The example call `translate_morse` using the output of `translate_text`.
+Feel free to change the text in the example. The example calls `translate_morse` using the output of `translate_text`, which is provided with a string.
 
 ### Tests
 

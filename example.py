@@ -2,7 +2,7 @@ from morse import MorseCodeTranslator
 
 translator = MorseCodeTranslator()
 
-text = "Hello world! Translating text to morse code."
+text = "This string has been translated to morse code and back again"
 
 # Translate text to morse code
 morse = translator.translate_text(text)
