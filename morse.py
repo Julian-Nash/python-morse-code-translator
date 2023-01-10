@@ -56,29 +56,25 @@ class MorseCodeTranslator:
         '"': ".-..-.",
         "?": "..--..",
         "/": "-..-.",
+        " ": " ",
     }
 
     def translate_morse(self, morse, strict=True):
 
         """
-        Translates morse code to english.
-
+        Translate#s morse code to english.
         Accepts:
             morse (str): A string of morse code to translate
             strict (bool): If True, parse and return morse code containing 4 spaces
-
         Returns:
             str: A translated string of text
         """
 
-        if morse == "":
+        if not morse:
             return "You must provide a string of text to translate"
 
-        if "    " in morse:
-            if strict:
-                return "Unable to translate morse code. Found 4 spaces in morse code string"
-            else:
-                morse.replace("    ", "   ")
+        if "    " in morse and strict:
+            return "Unable to translate morse code. Found 4 spaces in morse code string"
 
         translation = ""
 
@@ -106,20 +102,13 @@ class MorseCodeTranslator:
             str: A translated string of morse code
         """
 
-        if text == "":
+        if not text:
             return "You must provide a morse code string to translate"
 
         translation = ""
 
-        words = text.split(" ")
-
-        for word in words:
-            w = list()
-            for char in word:
-                if char.lower() in self.morse:
-                    w.append(self.morse[char.lower()])
-
-            translation += " ".join(w)
-            translation += "   "
+        for char in text:
+            if char.lower() in self.morse:
+                translation += self.morse[char.lower()] + " "
 
         return translation.rstrip()
